@@ -801,7 +801,7 @@ use Spiral\Validator\Bootloader\ValidatorBootloader;
 
 class CheckerBootloader extends Bootloader
 {
-    public function boot(ValidationBootloader $validation): void
+    public function boot(ValidatorBootloader $validation): void
     {
         // Register custom checker
         $validation->addChecker('db', DBChecker::class);
